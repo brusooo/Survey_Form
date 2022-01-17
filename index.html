@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://bit.ly/3GCr8y4"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Can I take few minutes from your time?</p>
+      </header>
+      <div class="container">
+        <form action="#" id="survey-form">
+            
+          <!--Name-->
+          <label for="name" id="name-label">Name</label><br>
+          <input required
+            type="text"
+            id="name"
+            name="user-name"
+            placeholder="Enter your Name"
+          /><br />
+
+          <!--Email-->
+          <label for="email" id="email-label">Email</label><br>
+          <input required
+            type="email"
+            id="email"
+            name="user-email"
+            placeholder="Enter your Email"
+          /><br />
+
+          <!--Age-->
+          <label for="age" id="number-label">Age</label><br>
+          <input required
+            type="number"
+            id="age"
+            name="user-age"
+            placeholder="Enter your Age"
+            min="1"
+            max="150"
+            minlength="1"
+            maxlength="3"
+          /><br>
+
+          <!--Role-->
+          <label for="role">
+            Which option best describes your current role?</label><br>
+          <select name="user-role" id="role" required>
+            <option value="" disabled selected>Select your role</option>
+            <option value="student">Student</option>
+            <option value="worker">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="refuse">Prefer not to say</option>
+            <option value="other">Other</option></select><br>
+
+          <!--Dream-->
+          <p>Have you achieved your Dream?</p>
+          <input type="radio" name="dream" id="yes" value="Yes" />
+          <label for="yes">Yes</label><br>
+          <input type="radio" name="dream" id="no" value="No" />
+          <label for="no">No</label><br>
+
+          <!--Interested Fields-->
+          <p>Select the fields you are intersted in</p>
+          <input
+            type="checkbox"
+            name="front_end"
+            id="front_end"
+            value="front_end"
+          />
+          <label for="front_end">Front-end Development</label><br />
+          <input
+            type="checkbox"
+            name="back_end"
+            id="back_end"
+            value="back_end"
+          />
+          <label for="back_end">Back-end Development</label><br />
+          <input
+            type="checkbox"
+            name="mobile_app"
+            id="mobile_app"
+            value="mobile_app"
+          />
+          <label for="mobile_app">Mobile App Development</label><br />
+          <input
+            type="checkbox"
+            name="software"
+            id="software"
+            value="software"
+          />
+          <label for="software">Software Development</label><br />
+          <input type="checkbox" name="others" id="others" value="others" />
+          <label for="others">Others</label><br />
+
+          <!--Comments-->
+          <label for="comments">Comments</label><br />
+          <textarea name="comments" placeholder="Leave your comments here..." id="Comments" cols="30" rows="5"></textarea
+          ><br />
+
+          <!--Submit-->
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

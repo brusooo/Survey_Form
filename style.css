@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    background-color: #161623;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#ffc107,#e91e63);
+    border-radius: 50%;
+    transform: translate(-320px,-200px);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#2196f3,#31ff38);
+    border-radius: 50%;
+    transform: translate(350px,150px);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    position: relative;
+    top: -10px;
+    display: block;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+}
+
+header #title{
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+header #description{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container{
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #FFF;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    line-height: 43px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+#name ,#email,#age,#role,#submit {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.1s;
+    outline: none;
+    border: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+#role:focus,
+textarea:focus{
+    outline: 3px #161623 solid !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Mochiy+Pop+P+One&family=The+Nautigal:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    position: relative;
+    background-color: #161623;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#ffc107,#e91e63);
+    border-radius: 50%;
+    transform: translate(-320px,-200px);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#2196f3,#31ff38);
+    border-radius: 50%;
+    transform: translate(350px,150px);
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    position: relative;
+    top: -10px;
+    display: block;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+}
+
+header #title{
+    font-family: 'The Nautigal', cursive;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+header #description{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.container{
+    position: relative;
+    width: auto;
+    height: auto;
+    color: #FFF;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 30px;
+    line-height: 43px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+#name ,#email,#number,#role,#submit {
+    width: 450px;
+    height: 40px;
+    padding: 10px;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: 0.1s;
+    outline: none;
+    border: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+#role:focus,
+textarea:focus{
+    outline: 3px #161623 solid !important;
+}
+
+
+select:required:invalid {
+    color: #666;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin: 7px;
+}
+
+label{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+p{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+textarea{
+    width: 450px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    transition: 0.1s;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#submit{
+    padding: 10px;
+    margin-top:5px;
+    background-color: #161623;
+    color: white;
+    transition: 0.1s;
+}
+
+#top{
+    position: relative;
+    line-height: 10px;
+}
+
+
+@media screen and (min-width:900px){
+    #name ,#email,#number,#role,#submit,textarea{
+        width: 620px;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin: 7px;
+}
+
+label{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+p{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+textarea{
+    width: 450px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    padding: 10px;
+    transition: 0.1s;
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#submit{
+    padding: 10px;
+    margin-top:5px;
+    background-color: #161623;
+    color: white;
+    transition: 0.1s;
+}
+
+#top{
+    position: relative;
+    line-height: 10px;
+}
+
+
+@media screen and (min-width:900px){
+    #name ,#email,#age,#role,#submit,textarea{
+        width: 620px;
+    }
+}
